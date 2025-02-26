@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  font-family: "Work sans", sans-serif;
+  h1, h2 {
+    font-family: "Amatic SC", sans-serif
+  }
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(assets/images/lyon.webp);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  color: white;
+  h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 70px;
+    margin-bottom: 10px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+}
+body {
+  main {
+    section#aboutUs {
+      margin-top: 30px;
+      display: flex;
+      img {
+        width: 320px;
+        height: 180px;
+      }
+      div.description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 60px;
+      }
+    }
+  }
+}
+section#plates {
+    display: flex;
+    justify-content: space-around;
+    article {
+        display: flex;
+        flex-direction: column;
+        border: solid grey 1px;
+        width: 450px;
+        height: 500px;
+    }
+    img {
+        width: 300px;
+        height: 300px;
+    }
+  }
