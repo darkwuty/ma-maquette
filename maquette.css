@@ -2,7 +2,8 @@
   margin: 0;
   font-family: "Work sans", sans-serif;
   h1, h2 {
-    font-family: "Amatic SC", sans-serif
+    font-family: "Amatic SC", sans-serif;
+    text-align: center;
   }
 }
 header {
@@ -31,8 +32,9 @@ header {
 }
 body {
   main {
-    section#aboutUs {
+    article#aboutUs {
       margin-top: 30px;
+      margin-bottom: 40px;
       display: flex;
       img {
         width: 320px;
@@ -43,22 +45,38 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
         margin-left: 60px;
+        h2 {
+          text-align: left;
+        }
       }
     }
   }
 }
 section#plates {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 20px;
     article {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
         border: solid grey 1px;
+        box-shadow: 0px 3px 3px grey ;
         width: 450px;
         height: 500px;
+        p:first-of-type {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     }
     img {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
+    }
+    p {
+      text-align: center;
     }
   }
