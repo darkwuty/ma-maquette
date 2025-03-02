@@ -1,10 +1,15 @@
 * {
   margin: 0;
   font-family: "Work sans", sans-serif;
-  h1, h2 {
+  h1,
+  h2 {
     font-family: "Amatic SC", sans-serif;
     text-align: center;
   }
+}
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
 }
 header {
   display: flex;
@@ -53,30 +58,67 @@ body {
   }
 }
 section#plates {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  article {
+    background-color: rgb(245, 245, 245);
     display: flex;
-    justify-content: space-between;
-    margin: 20px;
-    article {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        border: solid grey 1px;
-        box-shadow: 0px 3px 3px grey ;
-        width: 450px;
-        height: 500px;
-        p:first-of-type {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-    }
-    img {
-        width: 250px;
-        height: 250px;
-    }
-    p {
-      text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid grey 1px;
+    box-shadow: 0px 3px 3px grey;
+    width: 450px;
+    height: 500px;
+    p:first-of-type {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
   }
+  img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+  p {
+    text-align: center;
+  }
+}
+.Meilleurs {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+section#restaurant {
+  display: flex;
+  article {
+    text-align: center;
+    img {
+      width: 320px;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+}
+footer {
+  height: 250px;
+  background-color: rgb(52, 52, 52);
+  color: white;
+  section#followUs {
+    display: flex;
+    flex-direction: column;
+  }
+  section#contactUs {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.Bandeau {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: rgb(39, 39, 39);
+}
